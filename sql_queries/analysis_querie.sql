@@ -21,7 +21,10 @@ from Products a
 join ProductSales b
 on a.ProductID = b.product)
 
-select * from cte a
+select 
+*,
+(1 - discount * 1.0/100) * revenue as discount_revenue
+from cte a
 join discount b
-on a.Discount_Band = b.Discount and a.month = b.Month
+on a.Discount_Band = lower(b.Discount_Band) and a.month = b.Month
 

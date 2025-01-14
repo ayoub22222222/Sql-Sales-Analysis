@@ -58,4 +58,5 @@ This table includes information about discounts applied to products during speci
 ---
 ## executive summary
 
-![POWER BI VISUALIZATION](./image)
+![POWER BI VISUALIZATION](./image/power_bi.png)
+## Recommandation
